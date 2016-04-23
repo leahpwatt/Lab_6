@@ -1,0 +1,104 @@
+@font-face {
+  font-family: playtime;
+  src: url("fonts/playtime.ttf");
+}
+body {
+  background-color: #669;
+  font: 1em georgia, serif;
+}
+form {
+  color: #fff;
+  text-align: center;
+}
+header {
+  background-color: #3d3d5c;
+  font-family: playtime;
+  font-size: 2em;
+  padding: 1px;
+  color: #f93;
+  text-shadow: 1px 1px 0px #000;
+  text-align: center;
+}
+h2 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 0px #000;
+}
+#result {
+  font-size: 2em;
+  margin-top: 15px;
+  text-shadow: 1px 1px 0px #000;
+}
+img {
+  border-radius: 50%;
+  width: 20%;
+  border: 2px solid #3d3d5c;
+}
+#hot {
+  float: left;
+  position: relative;
+  top: -150px;
+  left: 30px;
+}
+#cold {
+  float: right;
+  position: relative;
+  top: -150px;
+  right: 30px;
+}
+#temperature,
+#unit {
+  width: 25%;
+  height: 25px;
+  display: inline;
+  margin-bottom: 10px;
+  border: 1.5px solid #3d3d5c;
+}
+#button {
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+  color: #fff;
+  background-color: #f93;
+  font: 1.5em playtime, arial, serif;
+  padding: 0.3em 1em 0.2em;
+  text-shadow: 1px 1px 0px #000;
+  border-radius: 0.9em;
+  border: 1.5px solid #3d3d5c;
+}
+#button:hover {
+  color: #669;
+  text-decoration: none;
+}
+@media (max-width: 950px) {
+  #hot {
+    float: left;
+    position: relative;
+    top: -125px;
+    left: 30px;
+  }
+  #cold {
+    float: right;
+    position: relative;
+    top: -125px;
+    right: 30px;
+  }
+}
+@media (max-width: 800px) {
+  #hot {
+    display: none;
+  }
+  #cold {
+    display: none;
+  }
+  header {
+    font-size: 1.5em;
+  }
+  #temperature,
+  #unit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
